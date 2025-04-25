@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary:#5A189A;
+    --color-nav:#637381;
+    --color-text:#111928;
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+  
+  .group:hover .animate-slide {
+    animation-play-state: paused;
+  }
+  
