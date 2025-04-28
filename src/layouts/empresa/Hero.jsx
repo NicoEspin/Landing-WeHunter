@@ -1,5 +1,7 @@
-import { Building, MessageCircle, Star, Users } from "lucide-react";
+import { MessageCircle, Star, Users } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
+import { slideIn } from "../../utils/motion";
 
 const Hero = () => {
   return (
@@ -19,14 +21,32 @@ const Hero = () => {
             Contacto directo
           </span>
         </div>
-        <h1 className="font-[700] text-[26px] lg:text-[48px] text-text text-center lg:text-start">
+        <motion.h1
+          variants={slideIn("right", "tween", 0.2, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="font-[700] text-[26px] lg:text-[48px] text-text text-center lg:text-start"
+        >
           Conectamos tu empresa con reclutadores freelance
-        </h1>
-        <p className="text-[18px] text-text">
+        </motion.h1>
+        <motion.p
+          variants={slideIn("left", "tween", 0.4, 1.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-[18px] text-text text-center lg:text-start"
+        >
           Gestionamos el match perfecto entre tus necesidades y el talento
           ideal, optimizando costos y tiempos sin perder calidad.
-        </p>
-        <div className="flex flex-col lg:flex-row gap-[20px]">
+        </motion.p>
+        <motion.div
+          variants={slideIn("right", "tween", 0.6, 1.4)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex flex-col lg:flex-row gap-[20px]"
+        >
           <button
             className="border-primary border-[1px] text-primary py-[9px] px-[24px] rounded-[6px]
           font-medium hover:text-white hover:bg-primary transition-colors"
@@ -39,7 +59,7 @@ const Hero = () => {
           >
             Registarme
           </button>
-        </div>
+        </motion.div>
       </div>
       <img
         src="./company-hero.webp"

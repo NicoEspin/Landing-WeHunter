@@ -1,8 +1,9 @@
 import React from "react";
 
+
 const HowWorksCard = ({ number, title, description, height = "347px" }) => {
   return (
-    <article
+    <article variants={{}}
       className="p-[20px] flex flex-col gap-[10px] rounded-[8px] border border-[#E0E0E0] max-w-[500px] items-center"
       style={{ height }}
     >

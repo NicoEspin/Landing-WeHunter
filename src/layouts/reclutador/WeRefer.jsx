@@ -15,7 +15,7 @@ const WeRefer = () => {
           <h2 className="text-[26px] lg:text-[28px] font-[700] text-white text-center lg:text-start">
             WeRefer: Ganá por recomendar talento como vos
           </h2>
-          <p className="text-white text-[20px] lg:text-[24px]">
+          <p className="text-white text-[20px] lg:text-[24px] text-center lg:text-start">
             ¿Conocés a otros reclutadores que también buscan trabajar con
             libertad, visibilidad y sin intermediarios? Invitálos a sumarse a
             WeHunter. Por cada reclutador que se registre con tu invitación,
